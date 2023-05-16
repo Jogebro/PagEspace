@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/01/21/20/earth-1365995_1280.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logoSpace{
+    width: 100vh;
+    height: 30vh;
+    margin: auto;
+}
+
+#contenidoVuelos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-left: 250px;
+}
+
+.card {
+    text-align: center;
+}
+#modalSpace{
+    margin: auto;
+}
+#boton{
+    text-align: center;
+}
+.contenedorModal{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 50rem;
+    border-radius: 10px;
+}
+
+#cerrarModal{
+    background-color: rgb(233, 37, 37);
+    border-style: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#cerrarModal:hover{
+    background-color: rgb(255, 38, 38);
+}
+table{
+    margin-top: 10px;
+}
+#nombreMisionModal{
+    padding: 15px 0 15px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width: 450px){
+    #contenidoVuelos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .logoSpace{
+        width: 50vh;
+        height: 20vh;
+
+    }
+}
